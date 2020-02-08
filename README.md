@@ -1,1 +1,1 @@
-repositorio para desenvolver minhas habilidades de resolver problemas utilizando logica de programacao
+repositorio para desenvolver minhas habilidades de resolver problemas utilizando logica de programacaoreposiotio de aprendizado com objetivo de desenvolver minhas habilidades em resolver problemas utilizando logica de programaçao
