@@ -86,6 +86,19 @@ int main(){
             
             break;
         }
+
+        case 8: {
+            float temp, resultado;
+
+            printf("Digite temperatura em Fahrenheit: ");
+            scanf("%f", &temp);
+
+            resultado = questao8(temp);
+
+            printf("%.1f Farh = %.1f Celsius\n", temp, resultado);
+
+            break;
+        }
         
         default:
             printf("Opcao incorreta, tente novamente!\n");

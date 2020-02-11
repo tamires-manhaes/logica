@@ -12,6 +12,7 @@ void menu(){
     printf("4 - questao 04\n");
     printf("5 - questao 05\n");
     printf("6 - questao 06\n");
+    printf("8 - questao 08\n");
     printf("-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -62,4 +63,12 @@ void questao6(int valorA, int valorB){
     resto = valorA % valorB;
 
     printf("quociente: %d | resto: %d\n", quociente, resto);
+}
+
+float questao8(float tempFarh){
+    float tempCelsius;
+
+    tempCelsius = (tempFarh - 32) * 5 / 9;
+
+    return tempCelsius;
 }
