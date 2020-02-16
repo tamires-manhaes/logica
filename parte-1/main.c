@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "moduloFuncoes.h"
 
 int main(){
@@ -84,6 +85,19 @@ int main(){
 
             questao6(valorA, valorB);
             
+            break;
+        }
+
+        case 7: {
+            int dia, mes, ano;
+
+            printf("digite dia de nascimento: "); scanf("%d", &dia);
+
+            printf("digite mes de nascimento: "); scanf("%d", &mes);
+
+            printf("digite ano de nascimento: "); scanf("%d", &ano);
+
+            questao07(dia, mes, ano);
             break;
         }
 
