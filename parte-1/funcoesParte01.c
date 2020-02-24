@@ -17,6 +17,9 @@ void menu(){
     printf("11 - questao 11\n");
     printf("12 - questao 12\n");
     printf("18 - questao 18\n");
+    printf("21 - questao 21\n");
+    printf("23 - questao 23\n");
+    printf("25 - questao 25\n");
     printf("-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -127,4 +130,49 @@ void questao18(int var1, int var2){
 
     printf("Valor 1 = %d\n", var1);
     printf("Valor 2 = %d\n", var2);
+}
+
+int questao21(int numero){
+    int resposta;
+    if(numero > 0){
+        resposta = 0;
+    } else {
+        resposta = 1;
+    }
+
+    return resposta;
+}
+
+int questao23(int numero){
+    int resposta;
+
+    if(numero % 2 == 0){
+        resposta = 0;
+    } else {
+        resposta = 1;
+    }
+
+    return resposta;
+}
+
+int questao25(int mes){
+    int qtdDias;
+
+    switch (mes){
+        case 1:  { qtdDias = 31; break; }
+        case 2:  { qtdDias = 29; break; }
+        case 3:  { qtdDias = 31; break; }
+        case 4:  { qtdDias = 30; break; }
+        case 5:  { qtdDias = 31; break; }
+        case 6:  { qtdDias = 30; break; }
+        case 7:  { qtdDias = 31; break; }
+        case 8:  { qtdDias = 31; break; }
+        case 9:  { qtdDias = 30; break; }
+        case 10: { qtdDias = 31; break; }
+        case 11: { qtdDias = 30; break; }
+        case 12: { qtdDias = 31; break; }   
+        default: { printf("Mes incorreto, tente novamente!\n"); break; }
+    }
+
+    return qtdDias;
 }
