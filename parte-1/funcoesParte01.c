@@ -14,6 +14,9 @@ void menu(){
     printf("6 - questao 06\n");
     printf("7 - questao 07\n");
     printf("8 - questao 08\n");
+    printf("11 - questao 11\n");
+    printf("12 - questao 12\n");
+    printf("18 - questao 18\n");
     printf("-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -77,13 +80,51 @@ void questao07(int dia, int mes, int ano){
     printf("ano digitado: %d\n", ano);
 
     anos = anoAtual - ano;
+    
     printf("%d anos \n", anos);
 }
 
-float questao8(float tempFarh){
+float questao08(float tempFarh){
     float tempCelsius;
 
     tempCelsius = (tempFarh - 32) * 5 / 9;
 
     return tempCelsius;
+}
+
+void questao10(int numero){
+    char binario;
+    if(numero < 32){
+        
+    }
+}
+
+float questao11(float Bi1nota1, float Bi1nota2, float Bi2nota1, float Bi2nota2){
+    float media, Bi1, Bi2;
+
+    Bi1 = Bi1nota1 + Bi1nota2;
+    Bi2 = Bi2nota1 + Bi2nota2;
+
+    media = (Bi1 + Bi2) / 2;
+
+    return media;
+}
+
+float questao12(float velocidadeMs){
+    float velocidadeKm;
+
+    velocidadeKm = velocidadeMs * 3.6;
+
+    return velocidadeKm;
+}
+
+void questao18(int var1, int var2){
+    int aux;
+
+    aux = var1;
+    var1 = var2;
+    var2 = aux;
+
+    printf("Valor 1 = %d\n", var1);
+    printf("Valor 2 = %d\n", var2);
 }

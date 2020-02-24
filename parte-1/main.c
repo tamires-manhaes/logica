@@ -107,9 +107,61 @@ int main(){
             printf("Digite temperatura em Fahrenheit: ");
             scanf("%f", &temp);
 
-            resultado = questao8(temp);
+            resultado = questao08(temp);
 
             printf("%.1f Farh = %.1f Celsius\n", temp, resultado);
+
+            break;
+        }
+
+        case 11: {
+            float nota1Bi1, nota2Bi1, nota1Bi2, nota2Bi2, media;
+
+            printf("Bimestre 1: \n");
+            printf("Nota 1: ");
+            scanf("%f", &nota1Bi1);
+
+            printf("Nota 2: ");
+            scanf("%f", &nota2Bi1);
+
+
+            printf("Bimestre 2: \n");
+            printf("Nota 1: ");
+            scanf("%f", &nota1Bi2);
+
+            printf("Nota 2: ");
+            scanf("%f", &nota2Bi2);
+
+            media = questao11(nota1Bi1, nota2Bi1, nota1Bi2, nota2Bi2);
+
+            printf("Media = %.1f\n", media);
+
+            break;
+        }
+
+        case 12: {
+            float velocidadeKm, velocidadeMs;
+
+            printf("Velocidade: ");
+            scanf("%f", &velocidadeMs);
+
+            velocidadeKm = questao12(velocidadeMs);
+
+            printf("%.1f m/s = %.1f km/h\n", velocidadeMs, velocidadeKm);   
+
+            break;
+        }
+
+        case 18: {
+            int var1, var2;
+
+            printf("Valor 1: ");
+            scanf("%d", &var1);
+
+            printf("Valor 2: ");
+            scanf("%d", &var2);
+
+            questao18(var1, var2);
 
             break;
         }
