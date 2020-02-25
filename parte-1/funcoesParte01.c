@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "moduloFuncoes.h"
+#include "moduloFuncoes01.h"
 
 #define PI 3.14
 
-void menu(){
+void menu01(){
     printf("-----------------------------------\n");
     printf("0 - sair\n");
     printf("1 - questao 01\n");

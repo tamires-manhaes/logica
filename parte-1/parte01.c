@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "moduloFuncoes.h"
+#include "moduloFuncoes01.h"
 
 int main(){
     int opcao, exit = 0;
 
     while(!exit){
-        menu();
+        menu01();
         scanf("%d", &opcao);
 
         switch (opcao){

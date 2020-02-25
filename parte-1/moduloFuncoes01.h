@@ -1,4 +1,5 @@
 
+// parte 1
 void menu();
 void questao1(float base, float altura);
 void questao2(float lado);
