@@ -95,6 +95,15 @@ float questao08(float tempFarh){
     return tempCelsius;
 }
 
+
+float questao09(float raio, float altura){
+    float volume;
+
+    volume = (PI * (raio * raio)) * altura;
+
+    return volume;
+}
+
 void questao10(int numero){
     char binario;
     if(numero < 32){
@@ -153,6 +162,22 @@ int questao23(int numero){
     }
 
     return resposta;
+}
+
+int questao24(int valorA, int valorB, int valorC){
+    int maior;
+
+    if(valorA > valorB && valorA > valorC){
+        maior = valorA;
+    } else if(valorB > valorA && valorB > valorC){
+        maior = valorB;
+    } else if(valorC > valorB && valorC > valorA){
+        maior = valorC;
+    } else {
+        maior = 0;
+    }
+
+    return maior;
 }
 
 int questao25(int mes){

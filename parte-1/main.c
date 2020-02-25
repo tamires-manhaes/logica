@@ -115,6 +115,21 @@ int main(){
                 break;
             }
 
+            case 9: {
+                float raio, altura;
+
+                printf("Digite valor do raio: ");
+                scanf("%f", &raio);
+
+                printf("Digite valor da altura: ");
+                scanf("%f", &altura);
+
+                float volume = questao09(raio, altura);
+                printf("Volume: %.1f cm³\n", volume);
+
+                break;
+            }
+
             case 11: {
                 float nota1Bi1, nota2Bi1, nota1Bi2, nota2Bi2, media;
 
@@ -196,6 +211,25 @@ int main(){
                 } else {
                     printf("Impar\n");
                 }
+
+                break;
+            }
+
+            case 24: {
+                int valorA, valorB, valorC;
+
+                printf("valor A:");
+                scanf("%d", &valorA);
+
+                printf("valor B:");
+                scanf("%d", &valorB);
+
+                printf("valor C:");
+                scanf("%d", &valorC);
+
+                int maior = questao24(valorA, valorB, valorC);
+
+                printf("maior valor é: %d\n", maior);
 
                 break;
             }
