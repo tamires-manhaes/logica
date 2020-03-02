@@ -1,6 +1,6 @@
 
 // parte 1
-void menu();
+void menu01();
 void questao1(float base, float altura);
 void questao2(float lado);
 void questao3(float raio);
@@ -19,3 +19,4 @@ int questao21(int numero);
 int questao23(int numero);
 int questao24(int valorA, int valorB, int valorC);
 int questao25(int mes);
+int questao26(int A, int B, int C);

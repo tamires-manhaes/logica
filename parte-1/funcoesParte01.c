@@ -4,24 +4,29 @@
 #define PI 3.14
 
 void menu01(){
-    printf("-----------------------------------\n");
-    printf("0 - sair\n");
-    printf("1 - questao 01\n");
-    printf("2 - questao 02\n");
-    printf("3 - questao 03\n");
-    printf("4 - questao 04\n");
-    printf("5 - questao 05\n");
-    printf("6 - questao 06\n");
-    printf("7 - questao 07\n");
-    printf("8 - questao 08\n");
-    printf("11 - questao 11\n");
-    printf("12 - questao 12\n");
-    printf("18 - questao 18\n");
-    printf("21 - questao 21\n");
-    printf("23 - questao 23\n");
-    printf("25 - questao 25\n");
-    printf("-----------------------------------\n");
-    printf("Digite opcao desejada: ");
+    printf("\t\t-----------------------------------\n");
+    printf("\t\t\t LISTA LÓGICA PARTE 1\n");
+    printf("\t\t-----------------------------------\n");
+    printf("\t\t\t0 - sair\n");
+    printf("\t\t\t1 - questao 01\n");
+    printf("\t\t\t2 - questao 02\n");
+    printf("\t\t\t3 - questao 03\n");
+    printf("\t\t\t4 - questao 04\n");
+    printf("\t\t\t5 - questao 05\n");
+    printf("\t\t\t6 - questao 06\n");
+    printf("\t\t\t7 - questao 07\n");
+    printf("\t\t\t8 - questao 08\n");
+    printf("\t\t\t9 - questao 09\n");
+    printf("\t\t\t11 - questao 11\n");
+    printf("\t\t\t12 - questao 12\n");
+    printf("\t\t\t18 - questao 18\n");
+    printf("\t\t\t21 - questao 21\n");
+    printf("\t\t\t23 - questao 23\n");
+    printf("\t\t\t24 - questao 24\n");
+    printf("\t\t\t25 - questao 25\n");
+    printf("\t\t\t26 - questao 26\n");
+    printf("\t\t-----------------------------------\n");
+    printf("\t\tDigite opcao desejada: ");
 }
 
 void questao1(float base, float altura){
@@ -200,4 +205,19 @@ int questao25(int mes){
     }
 
     return qtdDias;
+}
+
+int questao26(int A, int B, int C){
+    int resultado;
+
+    if(A < B && A < C) 
+        resultado = B + C;
+        else if(B < A && B < C) 
+                resultado = A + C;
+                else if(C < A && C < B) 
+                        resultado = A + B;
+                        else 
+                            resultado = -1;
+
+    return resultado;
 }

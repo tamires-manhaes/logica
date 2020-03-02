@@ -246,6 +246,25 @@ int main(){
 
                 break;
             }
+
+            case 26: {
+                int A, B, C;
+
+                printf("Digite A: ");
+                scanf("%d", &A);
+
+                printf("Digite B: ");
+                scanf("%d", &B);
+
+                printf("Digite C: ");
+                scanf("%d", &C);
+
+                int resultado = questao26(A, B, C);
+
+                printf("soma = %d\n", resultado);
+
+                break;
+            }
             
             default:{
                 printf("Opcao incorreta, tente novamente!\n");
