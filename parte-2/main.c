@@ -40,6 +40,11 @@ int main(){
                 break;
             }
 
+            case 7: {
+                questao07();    
+                break;
+            }
+
             default: {
                 printf("Opcao incorreta, tente novamente!\n");
                 break;

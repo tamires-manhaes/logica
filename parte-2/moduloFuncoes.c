@@ -9,6 +9,7 @@ void menu(){
     printf("\t\t\t1 - questao 1\n");
     printf("\t\t\t3 - questao 3\n");
     printf("\t\t\t6 - questao 6\n");
+    printf("\t\t\t7 - questao 7\n");
     printf("\t\t-----------------------------------\n");
     printf("\t\tDigite opcao desejada: ");
 }
@@ -103,4 +104,20 @@ int questao06(int valor){
     }
 
     return -1;
+}
+
+void questao07(){
+    int vetorPares[10], vetorRandom[10], vetorSomar[10];
+    int iCont = 0;
+    int random = 10;
+
+    for(int i = 0; i < 10; i++){
+        iCont += 2;
+        random += 1;
+        vetorPares[i] = iCont; 
+        vetorRandom[i] = random;
+        vetorSomar[i] = vetorPares[i] + vetorRandom[i];
+
+        printf("vetor[%d] = %d\n", i, vetorSomar[i]);
+    }
 }
