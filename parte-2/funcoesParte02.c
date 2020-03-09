@@ -7,6 +7,8 @@ void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
+    printf("\t\t\t3 - questao 3\n");
+    printf("\t\t\t6 - questao 6\n");
     printf("\t\t-----------------------------------\n");
     printf("\t\tDigite opcao desejada: ");
 }
@@ -72,4 +74,33 @@ void questao01(){
         }
     }
     
+}
+
+int questao03(){
+    int qtdEntradas, idade, media;
+    int sair = media = qtdEntradas = 0;
+
+    while(!sair){
+        printf("digite idade: ");
+        scanf("%d", &idade);
+
+        if(idade == 0) { break; }
+        if(idade != -1){ media += idade; }
+        qtdEntradas++;
+    }
+
+    media = media / qtdEntradas;
+    return media;
+}
+
+int questao06(int valor){
+    int vetor[8] = {8, 5, 12, 18, 22, 97, 21, 10};
+
+    for(int cont = 0; cont < 8; cont++){
+        if(vetor[cont] == valor){
+            return cont;
+        }
+    }
+
+    return -1;
 }
