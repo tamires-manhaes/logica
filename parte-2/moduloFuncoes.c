@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "moduloFuncoes02.h"
+#include "moduloFuncoes.h"
 
 void menu(){
     printf("\t\t-----------------------------------\n");

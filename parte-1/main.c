@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "moduloFuncoes01.h"
+#include "moduloFuncoes.h"
 
 int main(){
     int opcao, exit = 0;

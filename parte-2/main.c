@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "moduloFuncoes02.h"
+#include "moduloFuncoes.h"
 
 int main(){
     int opcao, exit = 0;

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "moduloFuncoes01.h"
+#include "moduloFuncoes.h"
 
 #define PI 3.14
 
