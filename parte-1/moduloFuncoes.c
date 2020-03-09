@@ -19,6 +19,7 @@ void menu01(){
     printf("\t\t\t9 - questao 09\n");
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
+    printf("\t\t\t17 - questao 17\n");
     printf("\t\t\t18 - questao 18\n");
     printf("\t\t\t21 - questao 21\n");
     printf("\t\t\t23 - questao 23\n");
@@ -133,6 +134,10 @@ float questao12(float velocidadeMs){
     velocidadeKm = velocidadeMs * 3.6;
 
     return velocidadeKm;
+}
+
+void questao17(float valor){
+    
 }
 
 void questao18(int var1, int var2){
