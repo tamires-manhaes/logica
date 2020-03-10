@@ -121,3 +121,10 @@ void questao07(){
         printf("vetor[%d] = %d\n", i, vetorSomar[i]);
     }
 }
+
+int questao11(int valor){
+    if(valor % 2 == 0)
+        return 0;
+    else
+        return 1;
+}

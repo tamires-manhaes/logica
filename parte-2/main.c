@@ -45,6 +45,23 @@ int main(){
                 break;
             }
 
+            case 11: {
+                int valor, resultado;
+
+                printf("Digite valor: ");
+                scanf("%d", &valor);
+
+                resultado = questao11(valor);
+
+                if(resultado == 0){
+                    printf("Eh par!\n");
+                } else {
+                    printf("Não eh par!\n");
+                }
+
+                break;
+            }
+
             default: {
                 printf("Opcao incorreta, tente novamente!\n");
                 break;
