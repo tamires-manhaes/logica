@@ -2,12 +2,22 @@
 #include <string.h>
 #include "moduloFuncoes.h"
 
+void inserirValores(int vetor[], int tamanho){
+    int i;
+
+    for(i = 0; i < tamanho; i++){
+        printf("digite valor: ");
+        scanf("%d", &vetor[i]);
+    }
+}
+
 void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t LISTA LÓGICA PARTE 3\n");
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
+    printf("\t\t\t2 - questao 2\n");
     printf("\t\t-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -19,5 +29,18 @@ void questao01(){
         vetor[i] = 0;
         printf("[%d] = %d\n", i, vetor[i]);
     }
-    
+}
+
+void questao02(){
+    int vetor[10], j, pares;
+
+    inserirValores(vetor, 10);
+    pares = 0;
+    for(j = 0; j < 10; j++){
+        if(vetor[j] % 2 == 0){
+            pares++;
+        }
+    }
+    printf("\n");
+    printf("foram encontrados [%d] numeros pares\n", pares);
 }
