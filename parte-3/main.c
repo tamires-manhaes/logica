@@ -3,10 +3,29 @@
 #include "moduloFuncoes.h"
 
 int main(){
+    int op, exit = 0;
 
-    printf("hello world! \n");
+    while(!exit){
+        menu();
+        scanf("%d", &op);
 
-    hello();
+        switch (op){
+            case 0: {
+                printf("finalizando...\n");
+                exit = 1;
+                break;
+            }
 
+            case 1: {
+                questao01();
+                break;
+            }
+
+            default:{
+                printf("opcao incorreta, tente novamente!\n");
+                break;
+            }
+        }
+    }
     return 0;
 }
