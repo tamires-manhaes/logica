@@ -1,5 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 #include "moduloFuncoes.h"
+
+#define TAMANHO 2
 
 void menu(){
     printf("\t\t-----------------------------------\n");
@@ -7,9 +10,16 @@ void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
+    printf("\t\t\t2 - questao 2\n");
     printf("\t\t\t3 - questao 3\n");
     printf("\t\t\t6 - questao 6\n");
     printf("\t\t\t7 - questao 7\n");
+    printf("\t\t\t11 - questao 11\n");
+    printf("\t\t\t19 - questao 19\n");
+    printf("\t\t\t20 - questao 20\n");
+    printf("\t\t\t21 - questao 21\n");
+    printf("\t\t\t22 - questao 22\n");
+    printf("\t\t\t23 - questao 23\n");
     printf("\t\t-----------------------------------\n");
     printf("\t\tDigite opcao desejada: ");
 }
@@ -77,6 +87,19 @@ void questao01(){
     
 }
 
+void questao02(Transacao transacoes[]){
+    // int i;
+
+    // for(i = 0; i <= TAMANHO; i++){
+    //     printf("Código da transação: ");
+    //     scanf("%c", &transacoes[i].codigo);
+
+    //     // printf("Valor :");
+    //     // scanf("%f", &transacoes[i].valor);
+    // }
+    
+}
+
 int questao03(){
     int qtdEntradas, idade, media;
     int sair = media = qtdEntradas = 0;
@@ -127,4 +150,45 @@ int questao11(int valor){
         return 0;
     else
         return 1;
+}
+
+void questao19(){
+    int i;
+
+    for(i = 0; i <= 100; i++)
+        printf("%d\n", i);
+}
+
+void questao20(){
+    int j;
+
+    for(j = 100; j >= 1; j--)
+        printf("%d\n", j);
+}
+
+void questao21(){
+    int k;
+
+    for(k = 2; k <= 100; k+=2)
+        printf("%d\n", k);
+}
+
+void questao22(){
+    int soma, cont;
+    soma = 0;
+
+    for(cont = 0; cont <= 100; cont++){
+        soma += cont;
+        printf("%d\n", cont);
+    }
+
+    printf("soma = %d\n", soma);
+}
+
+float questao23(int A, int B, int C, int D, int E){
+    float resultado;
+
+    resultado = (A + B + C + D + E) / 5;
+
+    return resultado;
 }

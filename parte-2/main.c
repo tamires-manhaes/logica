@@ -1,8 +1,13 @@
 #include <stdio.h>
+#include <string.h>
 #include "moduloFuncoes.h"
+
+#define TAMANHO 2
 
 int main(){
     int opcao, exit = 0;
+
+    Transacao transacoes[TAMANHO];
 
     while(!exit){
         menu();
@@ -16,6 +21,11 @@ int main(){
 
             case 1: {
                 questao01();
+                break;
+            }
+
+            case 2: {
+                questao02(transacoes);
                 break;
             }
 
@@ -59,6 +69,50 @@ int main(){
                     printf("Não eh par!\n");
                 }
 
+                break;
+            }
+
+            case 19 : {
+                questao19();
+                break;
+            }
+
+            case 20: {
+                questao20();
+                break;
+            }
+
+            case 21: {
+                questao21();
+                break;
+            }
+
+            case 22: {
+                questao22();
+                break;
+            }
+
+            case 23: {
+                float valorA, valorB, valorC, valorD, valorE, resultado;
+
+                printf("valor A: ");
+                scanf("%f", &valorA);
+
+                printf("valor B: ");
+                scanf("%f", &valorB);
+
+                printf("valor C: ");
+                scanf("%f", &valorC);
+
+                printf("valor D: ");
+                scanf("%f", &valorD);
+
+                printf("valor E: ");
+                scanf("%f", &valorE);
+
+                resultado = questao23(valorA, valorB, valorC, valorD, valorE);
+
+                printf("média = %.1f", resultado);
                 break;
             }
 
