@@ -31,7 +31,8 @@ int main(){
                 break;
             }
 
-            case 4: {
+            case 4:
+            case 5: {
                 questao04();
                 break;
             }

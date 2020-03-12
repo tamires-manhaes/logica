@@ -6,3 +6,4 @@ void questao01();
 void questao02();
 void questao03();
 void questao04();
+void questao05();

@@ -25,6 +25,8 @@ void menu(){
     printf("\t\t\t1 - questao 1\n");
     printf("\t\t\t2 - questao 2\n");
     printf("\t\t\t3 - questao 3\n");
+    printf("\t\t\t4 - questao 4\n");
+    printf("\t\t\t5 - questao 5\n");
     printf("\t\t-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -69,7 +71,7 @@ void questao03(){
 }
 
 void questao04(){
-    int maior, menor;
+    int maior, menor, posMaior, posMenor;
     int vetor[20];
 
     inserirValores(vetor, 20);
@@ -78,12 +80,17 @@ void questao04(){
     maior = menor = 0;
     
     for(int i = 0; i < 20; i++){
-        if(maior < vetor[i+1])
+        if(maior < vetor[i+1]){
             maior = vetor[i];
-        if(menor > vetor[i+1])
+             posMaior = i;
+        }
+
+        if(menor > vetor[i+1]){
             menor = vetor[i];
+            posMenor = i;
+        }
     }
 
-    printf("maior = %d\n", maior);
-    printf("menor = %d\n", menor);
+    printf("maior = [%d] na posicao [%d]\n", maior, posMaior);
+    printf("menor = [%d] na posicao [%d]\n", menor, posMenor);
 }
