@@ -67,3 +67,23 @@ void questao03(){
 
     imprimirVetor(vetorSoma, 10);
 }
+
+void questao04(){
+    int maior, menor;
+    int vetor[20];
+
+    inserirValores(vetor, 20);
+    printf("\n");
+
+    maior = menor = 0;
+    
+    for(int i = 0; i < 20; i++){
+        if(maior < vetor[i+1])
+            maior = vetor[i];
+        if(menor > vetor[i+1])
+            menor = vetor[i];
+    }
+
+    printf("maior = %d\n", maior);
+    printf("menor = %d\n", menor);
+}
