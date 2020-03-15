@@ -11,6 +11,14 @@ void inserirValores(int vetor[], int tamanho){
     }
 }
 
+void copiarVetor(int vetor[], int copia[], int tamanho){
+    int i;
+
+    for(i = 0; i < tamanho; i++){
+        copia[i] = vetor[i];
+    }
+}
+
 void imprimirVetor(int vetor[], int tamanho){
     for(int cont = 0; cont < tamanho; cont++){
         printf("[%d]\n", vetor[cont]);
@@ -27,6 +35,7 @@ void menu(){
     printf("\t\t\t3 - questao 3\n");
     printf("\t\t\t4 - questao 4\n");
     printf("\t\t\t5 - questao 5\n");
+    printf("\t\t\t6 - questao 6\n");
     printf("\t\t-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -70,6 +79,7 @@ void questao03(){
     imprimirVetor(vetorSoma, 10);
 }
 
+// questão 4 & 5
 void questao04(){
     int maior, menor, posMaior, posMenor;
     int vetor[20];
@@ -93,4 +103,14 @@ void questao04(){
 
     printf("maior = [%d] na posicao [%d]\n", maior, posMaior);
     printf("menor = [%d] na posicao [%d]\n", menor, posMenor);
+}
+
+void questao06(){
+    int vetor[10], copia[10], size;
+    size = 10;
+
+    inserirValores(vetor, size);
+    copiarVetor(vetor, copia, size);
+    printf("vetor cópia: \n");
+    imprimirVetor(copia, size);
 }
