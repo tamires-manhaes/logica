@@ -114,3 +114,22 @@ void questao06(){
     printf("vetor cópia: \n");
     imprimirVetor(copia, size);
 }
+
+void questao07(){
+    int vetorA[10], vetorB[10], vetorMaior[10], size;
+    size = 10;
+
+    inserirValores(vetorA, size);
+    inserirValores(vetorB, size);
+
+    int i;
+    for(i = 0; i < size; i++){
+        if(vetorA[i] > vetorB[i]){ 
+            vetorMaior[i] = vetorA[i];
+        } else{ 
+            vetorMaior[i] = vetorB[i]; 
+        }
+    }
+
+    imprimirVetor(vetorMaior, size);
+}
