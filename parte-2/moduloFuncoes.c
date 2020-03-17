@@ -16,6 +16,7 @@ void menu(){
     printf("\t\t\t7 - questao 7\n");
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
+    printf("\t\t\t15 - questao 15\n");
     printf("\t\t\t19 - questao 19\n");
     printf("\t\t\t20 - questao 20\n");
     printf("\t\t\t21 - questao 21\n");
