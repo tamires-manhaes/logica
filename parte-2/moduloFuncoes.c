@@ -160,6 +160,20 @@ int questao12(int valor){
     return resultado;
 }
 
+void questao15(int valor){
+    if(valor % 10 == 0){
+        printf("Divisível por 10\n");
+        if(valor % 5 == 0){
+            printf("Divisível por 5\n");
+            if(valor % 2 == 0){
+                printf("Divisível por 2\n");
+            }
+        }
+    } else {
+        printf("não é divisivel\n");
+    } 
+}
+
 void questao19(){
     int i;
 

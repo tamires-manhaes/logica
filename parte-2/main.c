@@ -88,6 +88,15 @@ int main(){
                 break;
             }
 
+            case 15:{
+                int valor;
+                printf("Digite valor: ");
+                scanf("%d", &valor);
+
+                questao15(valor);
+                break;
+            }
+
             case 19 : {
                 questao19();
                 break;

@@ -21,6 +21,7 @@ int questao06(int valor);
 void questao07();
 int questao11(int valor);
 int questao12(int valor);
+void questao15(int valor);
 void questao19();
 void questao20();
 void questao21();
