@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "moduloFuncoes.h"
 
 #define TAMANHO 2
 
 int main(){
     int opcao, exit = 0;
-
-    Transacao transacoes[TAMANHO];
 
     while(!exit){
         menu();
@@ -25,13 +24,18 @@ int main(){
             }
 
             case 2: {
-                questao02(transacoes);
+                questao02();
                 break;
             }
 
             case 3: {
                 int resultado = questao03();
                 printf("Média de idade = %d \n", resultado);
+                break;
+            }
+
+            case 4: {
+                questao04();
                 break;
             }
 
@@ -69,6 +73,18 @@ int main(){
                     printf("Não eh par!\n");
                 }
 
+                break;
+            }
+
+            case 12: {
+                int valor;
+
+                printf("digite valor: ");
+                scanf("%d", &valor);
+
+                int resultado = questao12(valor);
+
+                printf(" a raiz quadrada de %d eh = %d\n", valor, resultado);
                 break;
             }
 

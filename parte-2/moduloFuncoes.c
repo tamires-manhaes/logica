@@ -15,6 +15,7 @@ void menu(){
     printf("\t\t\t6 - questao 6\n");
     printf("\t\t\t7 - questao 7\n");
     printf("\t\t\t11 - questao 11\n");
+    printf("\t\t\t12 - questao 12\n");
     printf("\t\t\t19 - questao 19\n");
     printf("\t\t\t20 - questao 20\n");
     printf("\t\t\t21 - questao 21\n");
@@ -87,17 +88,8 @@ void questao01(){
     
 }
 
-void questao02(Transacao transacoes[]){
-    // int i;
+void questao02(){
 
-    // for(i = 0; i <= TAMANHO; i++){
-    //     printf("Código da transação: ");
-    //     scanf("%c", &transacoes[i].codigo);
-
-    //     // printf("Valor :");
-    //     // scanf("%f", &transacoes[i].valor);
-    // }
-    
 }
 
 int questao03(){
@@ -115,6 +107,14 @@ int questao03(){
 
     media = media / qtdEntradas;
     return media;
+}
+
+void questao04(){
+   Pessoa pessoas[6];
+
+    for(int j = 0; j < 6; j++){
+       
+    }
 }
 
 int questao06(int valor){
@@ -150,6 +150,14 @@ int questao11(int valor){
         return 0;
     else
         return 1;
+}
+
+int questao12(int valor){
+    int resultado;
+
+    resultado = valor * valor;
+
+    return resultado;
 }
 
 void questao19(){
