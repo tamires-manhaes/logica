@@ -17,6 +17,7 @@ void menu(){
     printf("\t\t\t10 - questao 10\n");
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
+    printf("\t\t\t13 - questao 13\n");
     printf("\t\t\t15 - questao 15\n");
     printf("\t\t\t19 - questao 19\n");
     printf("\t\t\t20 - questao 20\n");
@@ -176,6 +177,77 @@ int questao12(int valor){
     resultado = valor * valor;
 
     return resultado;
+}
+
+float questao13(char opcao){
+    float valorTotal;
+
+    switch (opcao){
+        case 'A':{
+            float litros, desconto, valorLitro;
+            valorLitro = 2.30;
+
+            printf("Digite quantidade de litros: ");
+            scanf("%f", &litros);
+
+            if(litros <= 25){
+                desconto = 2;
+            } else if(litros > 25){
+                desconto = 4;
+            } else {
+                desconto = 0;
+            }
+
+            float valordesconto = (desconto * valorLitro) / 100;
+            valorLitro = valorLitro - valordesconto;
+            valorTotal = valorLitro * litros;
+            
+            printf("-----\n");
+            printf("qtd litros : %f\n", litros);
+            printf("valor desconto: %f\n", valordesconto);
+            printf("valor litro: %f\n", valorLitro);
+            printf("valor total: %f\n", valorTotal);
+            printf("-----\n\n");
+
+
+            break;
+        }
+
+        case 'G':{
+            float litros, desconto, valorLitro;
+            valorLitro = 3.10;
+            printf("Digite quantidade de litros: ");
+            scanf("%f", &litros);
+
+            if(litros <= 25){
+                desconto = 3;
+            } else if(litros > 25){
+                desconto = 5;
+            } else {
+                desconto = 0;
+            }
+
+            float valordesconto = (desconto * valorLitro) / 100;
+            valorLitro = valorLitro - valordesconto;
+            valorTotal = valorLitro * litros;
+            
+            printf("-----\n");
+            printf("qtd litros : %f\n", litros);
+            printf("valor desconto: %f\n", valordesconto);
+            printf("valor litro: %f\n", valorLitro);
+            printf("valor total: %f\n", valorTotal);
+            printf("-----\n\n");
+
+            break;
+        }
+        
+        default:{
+            printf("Opcao incorreta!\n");
+            break;
+        }
+    }
+
+    return valorTotal;
 }
 
 void questao15(int valor){

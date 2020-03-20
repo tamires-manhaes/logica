@@ -105,6 +105,17 @@ int main(){
                 break;
             }
 
+            case 13: {
+                char opcao;
+                printf("QUal tipo de combustivel: ");
+                scanf("%s", &opcao);
+
+                float valorTotal = questao13(opcao);
+
+                printf("Valor total a pagar: %.2f", valorTotal);
+                break;
+            }
+
             case 15:{
                 int valor;
                 printf("Digite valor: ");
