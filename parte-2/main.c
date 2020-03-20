@@ -59,6 +59,23 @@ int main(){
                 break;
             }
 
+            case 10: {
+                int valorA, valorB, valorC;
+                printf("Valor A: ");
+                scanf("%d", &valorA);
+
+                printf("Valor B: ");
+                scanf("%d", &valorB);
+
+                printf("Valor C: ");
+                scanf("%d", &valorC);
+
+                int resultado = questao10(valorA, valorB, valorC);
+
+                printf("valor da soma dos dois maiores = %d", resultado);
+                break;
+            }
+
             case 11: {
                 int valor, resultado;
 

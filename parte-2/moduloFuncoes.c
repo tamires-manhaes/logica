@@ -14,6 +14,7 @@ void menu(){
     printf("\t\t\t3 - questao 3\n");
     printf("\t\t\t6 - questao 6\n");
     printf("\t\t\t7 - questao 7\n");
+    printf("\t\t\t10 - questao 10\n");
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
     printf("\t\t\t15 - questao 15\n");
@@ -144,6 +145,22 @@ void questao07(){
 
         printf("vetor[%d] = %d\n", i, vetorSomar[i]);
     }
+}
+
+int questao10(int valorA, int valorB, int valorC){
+    int resultado;
+
+    if(valorA > valorC && valorB > valorC){
+        resultado = valorA + valorB;
+    } else if(valorB > valorA && valorC > valorA){
+        resultado = valorB + valorC;
+    } else if(valorA + valorB && valorC > valorB){
+        resultado = valorA + valorC;
+    } else {
+        resultado = -1;
+    }
+
+    return resultado;
 }
 
 int questao11(int valor){
