@@ -116,6 +116,26 @@ int main(){
                 break;
             }
 
+            case 14: {
+                int opcao;
+                printf("----\n");
+                printf("TIPO 1 - ervas daninhas\n");
+                printf("TIPO 2 - garfanhotos\n");
+                printf("TIPO 3 - broca\n");
+                printf("TIPO 4 - todos acima\n");
+                printf("----\n");
+
+                printf("Digite a opcao desejada: ");
+                scanf("%d", &opcao);
+                
+                float valorTotal = questao14(opcao);
+
+                printf("----\n");
+                printf("Valor a pagar: R$%.2f\n", valorTotal);
+
+                break;
+            }
+
             case 15:{
                 int valor;
                 printf("Digite valor: ");

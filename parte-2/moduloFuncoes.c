@@ -18,6 +18,7 @@ void menu(){
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
     printf("\t\t\t13 - questao 13\n");
+    printf("\t\t\t14 - questao 14\n");
     printf("\t\t\t15 - questao 15\n");
     printf("\t\t\t19 - questao 19\n");
     printf("\t\t\t20 - questao 20\n");
@@ -248,6 +249,75 @@ float questao13(char opcao){
     }
 
     return valorTotal;
+}
+
+float questao14(int tipo){
+    float acres, valorPagar, desconto = 0;
+    
+    printf("Digite a quantidade de acres: ");
+    scanf("%f", &acres); 
+
+    // printf("%d acres\n", acres);
+
+    if(acres > 1000){ printf("entrou no if\n"); desconto = 0.5; }
+
+    switch(tipo){
+        case 1: {
+            printf("Opcao 1\n");
+            float porAcre = 50;
+            float valordesconto = (desconto * porAcre) / 100;
+
+            printf("valor desconto: %f\n", valordesconto);
+            porAcre = porAcre - valordesconto;
+            valorPagar = porAcre * acres; 
+
+            break;
+        }
+
+        case 2: {
+            printf("Opcao 2\n");
+            float porAcre = 100;
+            float valordesconto = (desconto * porAcre) / 100;
+
+            porAcre = porAcre - valordesconto;
+            valorPagar = porAcre * acres; 
+
+            break;
+        }
+
+        case 3: {
+            printf("Opcao 3\n");
+            float porAcre = 150;
+            float valordesconto = (desconto * porAcre) / 100;
+            
+            porAcre = porAcre - valordesconto;
+            valorPagar = porAcre * acres; 
+            break;
+        }
+
+        case 4: {
+            printf("Opcao 4\n");
+            float porAcre = 250;
+            float valordesconto = (desconto * porAcre) / 100;
+            
+            porAcre = porAcre - valordesconto;
+            valorPagar = porAcre * acres; 
+
+            break;
+        }
+
+        default: {
+            printf("opcao incorreta!\n");
+            break;
+        }
+    }
+
+    if (valorPagar > 750.00){
+        float maisDesconto = valorPagar / 10;
+        valorPagar -= maisDesconto;
+    }
+
+    return valorPagar;
 }
 
 void questao15(int valor){
