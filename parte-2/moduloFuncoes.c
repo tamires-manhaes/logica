@@ -257,9 +257,7 @@ float questao14(int tipo){
     printf("Digite a quantidade de acres: ");
     scanf("%f", &acres); 
 
-    // printf("%d acres\n", acres);
-
-    if(acres > 1000){ printf("entrou no if\n"); desconto = 0.5; }
+    if(acres > 1000){ desconto = 0.5; }
 
     switch(tipo){
         case 1: {
