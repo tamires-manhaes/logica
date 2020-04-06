@@ -145,6 +145,27 @@ int main(){
                 break;
             }
 
+            case 17: {
+                float nota1, nota2, nota3;
+
+                printf("Nota 1: ");
+                scanf("%f", &nota1);
+                printf("Nota 2: ");
+                scanf("%f", &nota2);
+                printf("Nota 3: ");
+                scanf("%f", &nota3);
+
+                int resultado = questao17(nota1, nota2, nota3);
+
+                if(resultado != 1){
+                    printf("Reprovado\n");
+                } else {
+                    printf("Aprovado\n");
+                }
+
+                break;
+            }
+
             case 19 : {
                 questao19();
                 break;

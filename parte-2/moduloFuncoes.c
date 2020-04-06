@@ -332,6 +332,21 @@ void questao15(int valor){
     } 
 }
 
+int questao17(float notaA, float notaB, float notaC){
+    int resultado;
+
+    float media = (notaA + notaB + notaC) / 3;
+    printf("Média = %.1f\n", media);
+
+    if(media < 5){
+        resultado = 0;
+    }  else{
+        resultado = 1;
+    }
+
+    return resultado;
+}
+
 void questao19(){
     int i;
 
