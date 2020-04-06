@@ -26,6 +26,7 @@ float questao13(char opcao);
 float questao14(int tipo);
 void questao15(int valor);
 int questao17(float notaA, float notaB, float notaC);
+void questao18(int a, int b, int c);
 void questao19();
 void questao20();
 void questao21();

@@ -166,6 +166,19 @@ int main(){
                 break;
             }
 
+            case 18: {
+                int a, b, c;
+                printf("valor de A: ");
+                scanf("%d", &a);
+                printf("valor de B: ");
+                scanf("%d", &b);
+                printf("valor de C: ");
+                scanf("%d", &c);
+
+                questao18(a, b, c);
+                break;
+            }
+
             case 19 : {
                 questao19();
                 break;

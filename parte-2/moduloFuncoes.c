@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 #include "moduloFuncoes.h"
 
 #define TAMANHO 2
@@ -345,6 +346,33 @@ int questao17(float notaA, float notaB, float notaC){
     }
 
     return resultado;
+}
+
+void questao18(int a, int b, int c){
+
+    printf("A = %d\n", a);
+    printf("B = %d\n", b);
+    printf("C = %d\n", c);
+
+    int potenciaB = (pow(b, 2));
+    int delta = potenciaB - 4 * a * c;
+    int raiz = 0;
+    raiz = sqrt(delta);
+
+    printf("delta = %d\n\n", delta);
+
+    if(delta < 0){
+        printf("Não existem raizes reais\n");
+    }else if(delta == 0){
+        int x = ( -b + raiz ) / ( 2 * a ); 
+        printf("x: %d\n", x);
+    } else if(delta > 0){
+        int x1 = ( -b + raiz ) / ( 2 * a ); 
+        int x2 = ( -b - raiz ) / ( 2 * a ); 
+
+        printf("x1 : %d\n", x1);
+        printf("x2 : %d\n", x2);
+    }
 }
 
 void questao19(){
