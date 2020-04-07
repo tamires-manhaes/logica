@@ -11,7 +11,6 @@ void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
-    printf("\t\t\t2 - questao 2\n");
     printf("\t\t\t3 - questao 3\n");
     printf("\t\t\t6 - questao 6\n");
     printf("\t\t\t7 - questao 7\n");
@@ -21,6 +20,8 @@ void menu(){
     printf("\t\t\t13 - questao 13\n");
     printf("\t\t\t14 - questao 14\n");
     printf("\t\t\t15 - questao 15\n");
+    printf("\t\t\t17 - questao 17\n");
+    printf("\t\t\t18 - questao 18\n");
     printf("\t\t\t19 - questao 19\n");
     printf("\t\t\t20 - questao 20\n");
     printf("\t\t\t21 - questao 21\n");
