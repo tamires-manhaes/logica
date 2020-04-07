@@ -25,6 +25,7 @@ void menu(){
     printf("\t\t\t24 - questao 24\n");
     printf("\t\t\t25 - questao 25\n");
     printf("\t\t\t26 - questao 26\n");
+    printf("\t\t\t29 - questao 29\n");
     printf("\t\t-----------------------------------\n");
     printf("\t\tDigite opcao desejada: ");
 }
@@ -227,7 +228,6 @@ float questao29(float salario){
 
     desconto = 11;
     descontoMaximo = 334.29;
-
     valorDescontado = (desconto * salario) / 100;
 
     if(valorDescontado > descontoMaximo) { valorDescontado = descontoMaximo; }
