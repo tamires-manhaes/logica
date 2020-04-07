@@ -2,6 +2,8 @@
 #include <string.h>
 #include "moduloFuncoes.h"
 
+#define COUNT 8
+
 void inserirValores(int vetor[], int tamanho){
     for(int i = 0; i < tamanho; i++){
         printf("digite valor: ");
@@ -24,6 +26,7 @@ void imprimirVetor(int vetor[], int tamanho){
 void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t LISTA LÓGICA PARTE 3\n");
+    printf("\t\t\t%d de 40 questões respondidas\n", COUNT);
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
