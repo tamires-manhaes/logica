@@ -40,29 +40,24 @@ void questao1(float base, float altura){
 }
 
 void questao2(float lado){
-    float area, perimetro;
 
-    area = lado * 4;
-    perimetro = lado * lado;
+    float area = lado * 4;
+    float perimetro = lado * lado;
 
     printf("area: %.1f | perimetro: %.1f\n", area, perimetro);
 }
 
 void questao3(float raio){
-    float area, perimetro;
 
-    area = PI * (raio * raio);    
-    perimetro = 2 * PI * raio;
+    float area = PI * (raio * raio);    
+    float perimetro = 2 * PI * raio;
 
     printf("area: %.1f | perimetro: %.1f\n", area, perimetro);
 } 
 
 float questao4(float lado){
-    float perimetro;
 
-    perimetro = 3 * lado;
-
-    return perimetro;
+    return 3 * lado;
 }
 
 int questao5(int numero){
@@ -70,10 +65,9 @@ int questao5(int numero){
 }
 
 void questao6(int valorA, int valorB){
-    int quociente, resto;
 
-    quociente = valorA / valorB;
-    resto = valorA % valorB;
+    int quociente = valorA / valorB;
+    int resto = valorA % valorB;
 
     printf("quociente: %d | resto: %d\n", quociente, resto);
 }
@@ -94,19 +88,13 @@ void questao07(int dia, int mes, int ano){
 }
 
 float questao08(float tempFarh){
-    float tempCelsius;
 
-    tempCelsius = (tempFarh - 32) * 5 / 9;
-
-    return tempCelsius;
+    return (tempFarh - 32) * 5 / 9;
 }
 
 float questao09(float raio, float altura){
-    float volume;
 
-    volume = (PI * (raio * raio)) * altura;
-
-    return volume;
+    return (PI * (raio * raio)) * altura;
 }
 
 void questao10(int numero){
@@ -125,11 +113,8 @@ float questao11(float Bi1nota1, float Bi1nota2, float Bi2nota1, float Bi2nota2){
 }
 
 float questao12(float velocidadeMs){
-    float velocidadeKm;
 
-    velocidadeKm = velocidadeMs * 3.6;
-
-    return velocidadeKm;
+    return velocidadeMs * 3.6;
 }
 
 void questao17(float valor){
@@ -149,11 +134,9 @@ void questao18(int var1, int var2){
 
 int questao21(int numero){
     int resposta;
-    if(numero > 0){
-        resposta = 0;
-    } else {
-        resposta = 1;
-    }
+
+    if(numero > 0){ resposta = 0; } 
+        else { resposta = 1; }
 
     return resposta;
 }
@@ -161,11 +144,8 @@ int questao21(int numero){
 int questao23(int numero){
     int resposta;
 
-    if(numero % 2 == 0){
-        resposta = 0;
-    } else {
-        resposta = 1;
-    }
+    if(numero % 2 == 0){ resposta = 0; } 
+        else { resposta = 1; }
 
     return resposta;
 }
@@ -173,15 +153,10 @@ int questao23(int numero){
 int questao24(int valorA, int valorB, int valorC){
     int maior;
 
-    if(valorA > valorB && valorA > valorC){
-        maior = valorA;
-    } else if(valorB > valorA && valorB > valorC){
-        maior = valorB;
-    } else if(valorC > valorB && valorC > valorA){
-        maior = valorC;
-    } else {
-        maior = 0;
-    }
+    if(valorA > valorB && valorA > valorC){  maior = valorA; } 
+        else if(valorB > valorA && valorB > valorC){ maior = valorB; } 
+            else if(valorC > valorB && valorC > valorA){ maior = valorC; } 
+                else { maior = 0; }
 
     return maior;
 }
@@ -211,14 +186,10 @@ int questao25(int mes){
 int questao26(int A, int B, int C){
     int resultado;
 
-    if(A < B && A < C) 
-        resultado = B + C;
-        else if(B < A && B < C) 
-                resultado = A + C;
-                else if(C < A && C < B) 
-                        resultado = A + B;
-                        else 
-                            resultado = -1;
+    if(A < B && A < C)  resultado = B + C;
+        else if(B < A && B < C)  resultado = A + C;
+                else if(C < A && C < B)  resultado = A + B;
+                        else  resultado = -1;
 
     return resultado;
 }
