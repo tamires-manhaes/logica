@@ -4,10 +4,12 @@
 #include "moduloFuncoes.h"
 
 #define TAMANHO 2
+#define COUNT 17
 
 void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t LISTA LÓGICA PARTE 2\n");
+    printf("\t\t\t%d de 30 questões respondidas\n", COUNT);
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
