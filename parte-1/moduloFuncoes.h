@@ -20,3 +20,4 @@ int questao23(int numero);
 int questao24(int valorA, int valorB, int valorC);
 int questao25(int mes);
 int questao26(int A, int B, int C);
+float questao29(float salario);

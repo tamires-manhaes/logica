@@ -265,6 +265,19 @@ int main(){
 
                 break;
             }
+
+            case 29: {
+                float salario;
+
+                printf("Digite o valor do salario: ");
+                scanf("%f", &salario);
+
+                float desconto = questao29(salario);
+
+                printf("Valor descontado: %.2f", desconto);
+
+                break;
+            }
             
             default:{
                 printf("Opcao incorreta, tente novamente!\n");

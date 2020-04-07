@@ -221,3 +221,16 @@ int questao26(int A, int B, int C){
 
     return resultado;
 }
+
+float questao29(float salario){
+    float valorDescontado, desconto, descontoMaximo;
+
+    desconto = 11;
+    descontoMaximo = 334.29;
+
+    valorDescontado = (desconto * salario) / 100;
+
+    if(valorDescontado > descontoMaximo) { valorDescontado = descontoMaximo; }
+
+    return valorDescontado;
+}
