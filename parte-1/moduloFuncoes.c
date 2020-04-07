@@ -3,7 +3,7 @@
 
 #define PI 3.14
 
-void menu01(){
+void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t LISTA LÓGICA PARTE 1\n");
     printf("\t\t-----------------------------------\n");
@@ -19,7 +19,6 @@ void menu01(){
     printf("\t\t\t9 - questao 09\n");
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
-    printf("\t\t\t17 - questao 17\n");
     printf("\t\t\t18 - questao 18\n");
     printf("\t\t\t21 - questao 21\n");
     printf("\t\t\t23 - questao 23\n");
@@ -101,7 +100,6 @@ float questao08(float tempFarh){
     return tempCelsius;
 }
 
-
 float questao09(float raio, float altura){
     float volume;
 
@@ -111,10 +109,7 @@ float questao09(float raio, float altura){
 }
 
 void questao10(int numero){
-    char binario;
-    if(numero < 32){
-        
-    }
+    
 }
 
 float questao11(float Bi1nota1, float Bi1nota2, float Bi2nota1, float Bi2nota2){

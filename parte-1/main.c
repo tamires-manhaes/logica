@@ -7,7 +7,7 @@ int main(){
     int opcao, exit = 0;
 
     while(!exit){
-        menu01();
+        menu();
         scanf("%d", &opcao);
 
         switch (opcao){
