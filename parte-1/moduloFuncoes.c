@@ -2,10 +2,12 @@
 #include "moduloFuncoes.h"
 
 #define PI 3.14
+#define COUNT 18
 
 void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t LISTA LÓGICA PARTE 1\n");
+    printf("\t\t\t%d de 29 questões respondidas\n", COUNT);
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 01\n");
