@@ -3,25 +3,21 @@
 #include "moduloFuncoes.h"
 
 void inserirValores(int vetor[], int tamanho){
-    int i;
-
-    for(i = 0; i < tamanho; i++){
+    for(int i = 0; i < tamanho; i++){
         printf("digite valor: ");
         scanf("%d", &vetor[i]);
     }
 }
 
 void copiarVetor(int vetor[], int copia[], int tamanho){
-    int i;
-
-    for(i = 0; i < tamanho; i++){
+    for(int i = 0; i < tamanho; i++){
         copia[i] = vetor[i];
     }
 }
 
 void imprimirVetor(int vetor[], int tamanho){
-    for(int cont = 0; cont < tamanho; cont++){
-        printf("[%d]\n", vetor[cont]);
+    for(int i = 0; i < tamanho; i++){
+        printf("[%d]\n", vetor[i]);
     }
 }
 
@@ -36,13 +32,14 @@ void menu(){
     printf("\t\t\t4 - questao 4\n");
     printf("\t\t\t5 - questao 5\n");
     printf("\t\t\t6 - questao 6\n");
+    printf("\t\t\t7 - questao 7\n");
+    printf("\t\t\t8 - questao 8\n");
     printf("\t\t-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
 
 void questao01(){
     int vetor[20];
-
     for (int i = 0; i < 20; i++){
         vetor[i] = 0;
         printf("[%d] = %d\n", i, vetor[i]);
@@ -50,11 +47,11 @@ void questao01(){
 }
 
 void questao02(){
-    int vetor[10], j, pares;
+    int vetor[10], pares;
 
     inserirValores(vetor, 10);
     pares = 0;
-    for(j = 0; j < 10; j++){
+    for(int j = 0; j < 10; j++){
         if(vetor[j] % 2 == 0){
             pares++;
         }
@@ -81,14 +78,13 @@ void questao03(){
 
 // questão 4 & 5
 void questao04(){
-    int maior, menor, posMaior, posMenor;
-    int vetor[20];
+    int vetor[20], maior, menor, posMaior, posMenor;
 
     inserirValores(vetor, 20);
     printf("\n");
 
     maior = menor = 0;
-    
+
     for(int i = 0; i < 20; i++){
         if(maior < vetor[i+1]){
             maior = vetor[i];
@@ -122,8 +118,7 @@ void questao07(){
     inserirValores(vetorA, size);
     inserirValores(vetorB, size);
 
-    int i;
-    for(i = 0; i < size; i++){
+    for(int i = 0; i < size; i++){
         if(vetorA[i] > vetorB[i]){ 
             vetorMaior[i] = vetorA[i];
         } else{ 
@@ -132,4 +127,30 @@ void questao07(){
     }
 
     imprimirVetor(vetorMaior, size);
+}
+
+void questao08(){
+    int mes[30], size, maisChuva, menosChuva, primeiraQuinzena, segundaQuinzena;
+    size = 30;
+    int primeira = (size / 2 - 1);
+    int segunda = primeira + 1;
+
+    inserirValores(mes, size);
+
+    maisChuva = menosChuva = primeiraQuinzena = segundaQuinzena = 0;
+    
+    for(int i = 0; i < size; i++){
+        if(maisChuva < mes[i+1]){ maisChuva = mes[i]; }
+        if(menosChuva > mes[i+1]){ menosChuva = mes[i]; }
+    }
+
+    for(int j = 0; j < primeira; j++){ primeiraQuinzena += mes[j]; }
+
+    for(int k = segunda; k < size; k++){ segundaQuinzena += mes[k]; }
+    
+    primeiraQuinzena = primeiraQuinzena / (size/2);
+    segundaQuinzena = segundaQuinzena / (size/2);
+
+    printf("média pluviométrico primeira quinzena = %d\n", primeiraQuinzena);
+    printf("média pluviométrico segunda quinzena = %d\n", segundaQuinzena);
 }
