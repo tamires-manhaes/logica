@@ -2,7 +2,8 @@
 #include <string.h>
 #include "moduloFuncoes.h"
 
-#define COUNT 8
+#define COUNT 9
+#define TAMANHO 15
 
 void inserirValores(int vetor[], int tamanho){
     for(int i = 0; i < tamanho; i++){
@@ -37,6 +38,7 @@ void menu(){
     printf("\t\t\t6 - questao 6\n");
     printf("\t\t\t7 - questao 7\n");
     printf("\t\t\t8 - questao 8\n");
+    printf("\t\t\t9 - questao 9\n");
     printf("\t\t-----------------------------------\n");
     printf("Digite opcao desejada: ");
 }
@@ -156,4 +158,17 @@ void questao08(){
 
     printf("média pluviométrico primeira quinzena = %d\n", primeiraQuinzena);
     printf("média pluviométrico segunda quinzena = %d\n", segundaQuinzena);
+}
+
+int questao09(int vetor[], int valor){
+    int qtdVezes, i;
+
+    qtdVezes = 0;
+
+    for(i = 0; i < TAMANHO; i++){
+        if(vetor[i] == valor)
+            qtdVezes++;
+    }
+
+    return qtdVezes;
 }

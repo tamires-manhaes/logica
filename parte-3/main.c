@@ -47,6 +47,24 @@ int main(){
                 break;
             }
 
+            case 8: {
+                questao08();
+                break;
+            }
+
+            case 9: {
+                int valor;
+                int vetor[15] = {96, 91, 58, 51, 1, 70, 15, 91, 2, 8, 5, 11, 97, 22, 21};
+
+                printf("Digite valor: ");
+                scanf("%d", &valor);
+
+                int qtdVezes = questao09(vetor, valor);
+
+                printf("Esse valor aparece %d\n", qtdVezes);
+
+                break;
+            }
             default:{
                 printf("opcao incorreta, tente novamente!\n");
                 break;
