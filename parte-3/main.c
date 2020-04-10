@@ -65,6 +65,19 @@ int main(){
 
                 break;
             }
+
+            case 10: {
+                int valor, resultado;
+
+                printf("valor a ser buscado: ");
+                scanf("%d", &valor);
+
+                resultado = questao10(valor);
+
+                printf("valor encontrado primeiro na posição [%d]", resultado);
+                
+                break;
+            }
             default:{
                 printf("opcao incorreta, tente novamente!\n");
                 break;

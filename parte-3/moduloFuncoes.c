@@ -2,8 +2,11 @@
 #include <string.h>
 #include "moduloFuncoes.h"
 
-#define COUNT 9
+
+#define NAO_ENCONTRADO -1
+#define COUNT 10
 #define TAMANHO 15
+#define DEZ 10
 
 void inserirValores(int vetor[], int tamanho){
     for(int i = 0; i < tamanho; i++){
@@ -27,7 +30,7 @@ void imprimirVetor(int vetor[], int tamanho){
 void menu(){
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t LISTA LÓGICA PARTE 3\n");
-    printf("\t\t\t%d de 40 questões respondidas\n", COUNT);
+    printf("\t\t%d de 40 questões respondidas\n", COUNT);
     printf("\t\t-----------------------------------\n");
     printf("\t\t\t0 - sair\n");
     printf("\t\t\t1 - questao 1\n");
@@ -172,3 +175,21 @@ int questao09(int vetor[], int valor){
 
     return qtdVezes;
 }
+
+int questao10(int valor){
+    int vetor[DEZ], tamanho, posicao;
+    tamanho = DEZ;
+    posicao= -1;
+    
+    inserirValores(vetor, tamanho);
+
+    for(int i = 0; i < tamanho; i++){
+        if(vetor[i] == valor){
+            printf("valor encontrado! %d", i+1);
+            posicao = i+1;
+        }
+    }
+
+    return posicao;
+}
+
