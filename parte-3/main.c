@@ -66,7 +66,7 @@ int main(){
                 break;
             }
 
-            case 10: {
+            case 11: {
                 int valor, resultado;
 
                 printf("valor a ser buscado: ");
@@ -86,3 +86,4 @@ int main(){
     }
     return 0;
 }
+

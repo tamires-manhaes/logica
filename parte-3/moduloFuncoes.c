@@ -176,7 +176,7 @@ int questao09(int vetor[], int valor){
     return qtdVezes;
 }
 
-int questao10(int valor){
+int questao11(int valor){
     int vetor[DEZ], tamanho, posicao;
     tamanho = DEZ;
     posicao= -1;

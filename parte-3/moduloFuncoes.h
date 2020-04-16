@@ -12,4 +12,4 @@ void questao06();
 void questao07();
 void questao08();
 int questao09(int vetor[], int valor);
-int questao10(int valor);
+int questao11(int valor);
