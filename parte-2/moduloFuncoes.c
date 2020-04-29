@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+// #include <conio.h>
 #include <math.h>
 #include "moduloFuncoes.h"
 
@@ -16,6 +17,7 @@ void menu(){
     printf("\t\t\t3 - questao 3\n");
     printf("\t\t\t6 - questao 6\n");
     printf("\t\t\t7 - questao 7\n");
+    printf("\t\t\t9 - questao 9\n");
     printf("\t\t\t10 - questao 10\n");
     printf("\t\t\t11 - questao 11\n");
     printf("\t\t\t12 - questao 12\n");
@@ -150,6 +152,15 @@ void questao07(){
         vetorSomar[i] = vetorPares[i] + vetorRandom[i];
 
         printf("vetor[%d] = %d\n", i, vetorSomar[i]);
+    }
+}
+
+void questao09(char letra){
+    printf("LETRA: %c\n", letra);
+    if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+        printf("eh vogal\n");
+    } else {
+        printf("eh consoante\n");
     }
 }
 

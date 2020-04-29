@@ -19,6 +19,7 @@ int questao03();
 void questao04();
 int questao06(int valor);
 void questao07();
+void questao09(char letra);
 int questao10(int valorA, int valorB, int valorC);
 int questao11(int valor);
 int questao12(int valor);

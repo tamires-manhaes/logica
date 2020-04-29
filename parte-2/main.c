@@ -1,4 +1,5 @@
 #include <stdio.h>
+// #include <conio.h>
 #include <string.h>
 #include <stdlib.h>
 #include "moduloFuncoes.h"
@@ -56,6 +57,18 @@ int main(){
 
             case 7: {
                 questao07();    
+                break;
+            }
+
+            case 9: {
+                char letra;
+                printf("Digite letra: ");
+                scanf(" %c", &letra);
+                // letra = getchar();
+
+                printf("LETRA: %c\n", letra);
+
+                questao09(letra);
                 break;
             }
 
