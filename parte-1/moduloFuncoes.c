@@ -201,13 +201,13 @@ float questao27(float notaA, float notaB, float notaC){
     float maior = 0;
     if(notaA > notaB && notaA > notaC){
         maior = notaA;
-        media = ((notaA * 5) + (notaB * 2.5) + (notaC * 2.5) / 10);
+        media = ((maior * 5) + (notaB * 2.5) + (notaC * 2.5) / 10);
     }else if(notaB > notaA && notaB > notaC){
         maior = notaB;
-        media = ((notaB * 5) + (notaA * 2.5) + (notaC * 2.5) / 10);
+        media = ((maior * 5) + (notaA * 2.5) + (notaC * 2.5) / 10);
     } else if (notaC > notaA && notaC > notaB){
         maior = notaC;
-        media = ((notaC * 5) + (notaB * 2.5) + (notaA * 2.5) / 10);
+        media = ((maior * 5) + (notaB * 2.5) + (notaA * 2.5) / 10);
     }else {
         printf("Ocorreu um erro ao calcular média");
         media = 0;
