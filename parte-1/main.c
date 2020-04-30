@@ -26,7 +26,7 @@ int main(){
                 printf("digite o valor da altura: ");
                 scanf("%f", &altura);
 
-                questao1(base, altura);
+                questao01(base, altura);
 
                 break;
             }
@@ -37,7 +37,7 @@ int main(){
                 printf("digite o vlaor do lado: ");
                 scanf("%f", &lado);
 
-                questao2(lado);
+                questao02(lado);
 
                 break;
             }
@@ -48,7 +48,7 @@ int main(){
                 printf("digite o valor do raio: ");
                 scanf("%f", &raio);
 
-                questao3(raio);
+                questao03(raio);
                 break;
             }
 
@@ -58,7 +58,7 @@ int main(){
                 printf("digite o valor do lado: ");
                 scanf("%f", &lado);
 
-                float perimetro = questao4(lado);
+                float perimetro = questao04(lado);
                 printf("perimetro: %.1f\n", perimetro);
 
                 break;
@@ -70,7 +70,7 @@ int main(){
                 printf("digite numero: ");
                 scanf("%d", &numero);
 
-                int sucessor = questao5(numero);
+                int sucessor = questao05(numero);
                 printf("numero: %d | sucessor: %d\n", numero, sucessor);
 
                 break;
@@ -84,7 +84,7 @@ int main(){
                 printf("digite valor B: ");
                 scanf("%d", &valorB);
 
-                questao6(valorA, valorB);
+                questao06(valorA, valorB);
                 
                 break;
             }
@@ -263,6 +263,24 @@ int main(){
 
                 printf("soma = %d\n", resultado);
 
+                break;
+            }
+
+            case 27:{
+                float notaA, notaB, notaC, media;
+
+                printf("Digite nota 1: ");
+                scanf("%f", &notaA);
+
+                printf("Digite nota 2: ");
+                scanf("%f", &notaB);
+
+                printf("Digite nota 3: ");
+                scanf("%f", &notaC);
+
+                media = questao27(notaA, notaB, notaC);
+
+                printf("Media = %.1f", media);
                 break;
             }
 

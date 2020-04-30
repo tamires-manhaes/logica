@@ -1,12 +1,12 @@
 
 // parte 1
 void menu();
-void questao1(float base, float altura);
-void questao2(float lado);
-void questao3(float raio);
-float questao4(float lado);
-int questao5(int numero);
-void questao6(int valorA, int valorB);
+void questao01(float base, float altura);
+void questao02(float lado);
+void questao03(float raio);
+float questao04(float lado);
+int questao05(int numero);
+void questao06(int valorA, int valorB);
 void questao07(int dia, int mes, int ano);
 float questao08(float tempFarh);
 float questao09(float raio, float altura);
@@ -20,4 +20,5 @@ int questao23(int numero);
 int questao24(int valorA, int valorB, int valorC);
 int questao25(int mes);
 int questao26(int A, int B, int C);
+float questao27(float notaA, float notaB, float notaC);
 float questao29(float salario);

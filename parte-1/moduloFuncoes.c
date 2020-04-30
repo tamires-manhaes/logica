@@ -32,7 +32,7 @@ void menu(){
     printf("\t\tDigite opcao desejada: ");
 }
 
-void questao1(float base, float altura){
+void questao01(float base, float altura){
     float area, perimetro;
 
     area = base * altura;
@@ -41,7 +41,7 @@ void questao1(float base, float altura){
     printf("perimetro: %1.f | altura: %1.f\n", perimetro, area);
 }
 
-void questao2(float lado){
+void questao02(float lado){
 
     float area = lado * 4;
     float perimetro = lado * lado;
@@ -49,7 +49,7 @@ void questao2(float lado){
     printf("area: %.1f | perimetro: %.1f\n", area, perimetro);
 }
 
-void questao3(float raio){
+void questao03(float raio){
 
     float area = PI * (raio * raio);    
     float perimetro = 2 * PI * raio;
@@ -57,16 +57,16 @@ void questao3(float raio){
     printf("area: %.1f | perimetro: %.1f\n", area, perimetro);
 } 
 
-float questao4(float lado){
+float questao04(float lado){
 
     return 3 * lado;
 }
 
-int questao5(int numero){
+int questao05(int numero){
     return numero+1;
 }
 
-void questao6(int valorA, int valorB){
+void questao06(int valorA, int valorB){
 
     int quociente = valorA / valorB;
     int resto = valorA % valorB;
@@ -194,6 +194,26 @@ int questao26(int A, int B, int C){
                         else  resultado = -1;
 
     return resultado;
+}
+
+float questao27(float notaA, float notaB, float notaC){
+    float media;
+    float maior = 0;
+    if(notaA > notaB && notaA > notaC){
+        maior = notaA;
+        media = ((notaA * 5) + (notaB * 2.5) + (notaC * 2.5) / 10);
+    }else if(notaB > notaA && notaB > notaC){
+        maior = notaB;
+        media = ((notaB * 5) + (notaA * 2.5) + (notaC * 2.5) / 10);
+    } else if (notaC > notaA && notaC > notaB){
+        maior = notaC;
+        media = ((notaC * 5) + (notaB * 2.5) + (notaA * 2.5) / 10);
+    }else {
+        printf("Ocorreu um erro ao calcular média");
+        media = 0;
+    }
+
+    return media;
 }
 
 float questao29(float salario){
